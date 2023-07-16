@@ -53,7 +53,9 @@ gulp.task("serve", function () {
   });
 
   // 파일 변경 감지 시 Browsersync로 브라우저를 새로고침합니다.
-  gulp.watch("src/scss/*.scss", gulp.series("style"));
+  gulp
+    .watch("src/scss/*.scss", gulp.series("style"))
+    .on("change", browserSync.reload);
   gulp
     .watch("src/**/*.html", gulp.series("fileinclude"))
     .on("change", browserSync.reload);
