@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>title</title>
+    <link rel="stylesheet" href="/css/reset.css" />
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
@@ -11,7 +12,17 @@
   <h1>Header Area 5</h1>
 </header>
 
-    <main><h1>main page</h1></main>
+    <main>
+      <h1>main page</h1>
+      <form action="">
+        <label for="">롯데카드</label><input id="ea1" type="number" /><br />
+        <label for="">삼성카드</label><input id="ea2" type="number" /><br />
+        <label for="">할부값</label><input id="ea3" type="number" /><br />
+        <input type="submit" value="결과" onclick="getval(event)" />
+        <div id="result_val">:</div>
+      </form>
+    </main>
+
     <footer>푸터임..5</footer>
 
 

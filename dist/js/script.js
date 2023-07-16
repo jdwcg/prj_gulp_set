@@ -1,1 +1,1 @@
-console.log("hello");
+console.log("hello");let ea1=document.getElementById("ea1"),ea2=document.getElementById("ea2"),ea3=document.getElementById("ea3"),resultVal=document.getElementById("result_val");function getval(e){e.preventDefault();e=parseFloat(ea1.value)+parseFloat(ea2.value)+parseFloat(ea3.value),e=1e4<e?e-1e4+"원 초과했음":"관리잘했음";resultVal.innerHTML=e}
